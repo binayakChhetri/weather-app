@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 3em 2em;
+  width: 50%;
+  height: 85%;
+  max-width: 310px;
+  min-width: 300px;
+  text-align: center;
+  color: white;
+  font-family: ubuntu, sans-serif;
+
+  border-radius: 20px;
+
+  /* background-image: url('images/day.jpg'); */
+  background-size: cover;
+
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+.search-cities {
+  position: relative;
+  margin-bottom: 3em;
+}
+
+#search {
+  position: absolute;
+  bottom: 11px;
+  right: 15px;
+
+  width: 15px;
+  cursor: pointer;
+
+  transition: transform 300ms ease;
+}
+
+.search-cities input {
+  margin-top: 6em;
+  box-sizing: border-box;
+  border-style: none;
+  padding: 0.7em 1em;
+  border-radius: 10px;
+  border: solid 2px transparent;
+
+  font-family: ubuntu, sans-serif;
+
+  transition: border 300ms ease;
+}
+
+.temperature {
+  cursor: pointer;
+}
+
+.temperature {
+  font-size: 4rem;
+}
+
+.search-cities input:focus {
+  border: solid 2px rgb(46, 110, 184);
+}
+
+/* HOVERS AND OTHER EFFECTS */
+
+#search:hover {
+  transform: scale(1.4);
+}
